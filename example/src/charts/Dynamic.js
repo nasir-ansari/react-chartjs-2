@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Bar } from '@reactchartjs/react-chart.js'
+import { Bar, Line } from '@reactchartjs/react-chart.js'
 
 const rand = () => Math.round(Math.random() * 20 - 10)
 
@@ -64,7 +64,7 @@ const Dynamic = () => {
           </a>
         </div>
       </div>
-      <Bar data={data} options={options} />
+      <Line data={data} options={options} />
     </>
   )
 }
